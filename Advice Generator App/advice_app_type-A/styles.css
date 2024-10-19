@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Manrope', sans-serif;
+}
+:root {
+	--color-bg: hsl(218, 23%, 16%);
+	--color-bg-darker: hsl(217, 19%, 24%);
+	--color-bg-lighter: hsl(217, 19%, 38%);
+
+	--color-text-light: hsl(193, 38%, 86%);
+	--color-point: hsl(150, 100%, 66%);
+   --img-divider-desktop: url('./images/pattern-divider-desktop.svg')
+   --img-divider-mobile: url('./images/pattern-divider-mobile.svg')
+
+	--border-radius: 1rem;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+
+	background-color: var(--color-bg);
+	color: var(--color-text-light);
+}
+button {
+	border: 0;
+	outline: 0;
+}
+button:hover {
+	cursor: pointer;
+	box-shadow: 0 0 1em 0.25em var(--color-point),
+		0 0 4em 1em var(--color-point),
+		inset 0 0 0.75em 0.25em var(--color-point);
+}
+/* -------------------------------------------------------------------------------- */
+
+main.wrapper {
+	width: 50%;
+   min-width: 375px;
+   max-width: 550px;
+   height: fit-content;
+	
+   
+	/* max-width: 1440px; */
+
+	display: flex;
+	flex-direction: column;
+   justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+.advice-container {
+	width: 100%;
+	height: 80%;
+	background-color: var(--color-bg-darker);
+	border-radius: 1rem;
+	text-align: center;
+
+   padding: 3rem;
+}
+#advice-number{
+ color: var(--color-point);
+ font-size: 0.8rem;
+ font-weight: 600;
+ text-transform: uppercase;
+ letter-spacing: 5px;
+
+}
+.advice-text {
+   font-size: 1.8rem;
+   font-weight: 600;
+
+   padding: 1.5rem 0;
+}
+.divider picture{
+   display: flex;
+   justify-content: center;
+   width: auto;
+   margin-bottom: 1.5rem;
+   /* background-image: var(--img-divider-desktop);
+   background-repeat: no-repeat;
+   background-position: center; */
+}
+
+/* -------------------------------------------------------------------------------- */
+#button-dice {
+	display: flex;
+	justify-content: center;
+   align-items: center;
+   align-content: center;
+
+	width: 4rem;
+	height: 4rem;
+	border-radius: 2rem;
+	background-color: var(--color-point);
+	margin-top: -2rem;
+}
+/* #button-dice img{	
+   flex: inherit;
+   align-content: center;
+} */
+
+
+/* -------------------------------------------------------------------------------- */
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	margin-top: 3rem;
+}
+.attribution a {
+	color: var(--color-text-light);
+}
+/* --- media-query ----------------------------------------------------------------------------- */
+@media screen and (max-width: 480px) {
+	/* For mobile: */
+   
+
+}
